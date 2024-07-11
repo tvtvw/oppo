@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대만 여행 가이드</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color : #FF0000 !important;
+    }
+    .bg-primary {
+      background-color: #FF0000 !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: ##FF0000 !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #FF0000 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #FF0000 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #FF0000;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">대만 여행 가이드 - 10303 김성현</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>유라시아 대륙 동남부와 태평양 서부의 사이에 놓여 있는 섬나라</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/대만.PNG" class="d-block w-100" alt="일본 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/대만 풍경.jpg" class="d-block w-100" alt="일본 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/라이칭더.jpg" class="d-block w-100" alt="일본 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/대만티비.jpg" class="d-block w-100" alt="일본 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/대만티티비.jpg" class="d-block w-100" alt="일본 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/대만티비티비.jpg" alt="대만 역사 1" class="img-fluid">
+            <p>.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/청일전쟁.jpg" alt="대만 역사 2" class="img-fluid">
+            <p>.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/신해혁명.jpg" alt="대만 역사 3" class="img-fluid">
+            <p>.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/대만티비티비.jpg" alt="대만 역사 1" class="img-fluid">
+          <p>선사시대에는 말레이·인도네시아 계통의 종족이 거주했던 것으로 추정되고, 타이완 내의 약 500여 곳에서 선사유적지의 출토물이 발견되었다.
+
+1590년 일단의 포루투갈 선단이 타이완에 도착한 후, 타이완 북부지역에 잠시 거주하였고, 타이완을 Ilha Formosa(아름다운 섬)라고 부르며 이 명칭으로 서양에 소개하였다..</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/청일전쟁.jpg" alt="대만 역사 2" class="img-fluid">
+          <p>제국주의 열강의 타이완에 대한 침탈이 계속되자 청나라는 심보정(沈葆楨) 및 정일창(丁日昌) 등을 파견하여 타이완의 계속적인 개발과 방어를 시도하면서, 1822년타이완을 청나라의 22번째 성(省)으로 편입시키고, 1823년유명전(劉銘傳)을 최초의 성장(省長)으로 파견하였다.
+
+1895년 청일전쟁에서 청나라가 패하자 일본과의 시모노세키 조약으로 청나라는 타이완을 일본에 할양하였다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/신해혁명.jpg" alt="대만 역사 3" class="img-fluid">
+          <p>1945년 8월 일본이 타이완을 연합국에 양도한 후, 국민당은 정부군을 타이완에 파견하면서 인수 작업을 실시하였다.
+
+1949년 5월 중국국민당은 공산군의 공격이 거세지자 타이완에 계엄령을 선포하고 30만명의 국민당 군대를 타이완에 진주시켰다. 같은 해 10월에는 광동(廣東) 등지의 대규모 접전에서 공산군에게 패배하자, 12월부터 타이완으로 중화민국의 정부를 완전히 이전하였다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/2022-12-08.webp." alt="대만 관광지 1" class="img-fluid">
+            <p>타이베이.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/2024-02-08.jpg" alt="대만 관광지 2" class="img-fluid">
+            <p>Kenting National Park.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/DSC_0170.webp" alt="대만 관광지 3" class="img-fluid">
+            <p>스펀폭포</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">관광지 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/2022-12-08.webp." alt="일본 관광지 1" class="img-fluid">
+          <p>대만(중화민국)의 실질 수도이자 최대 도시. 대만의 각종 행정 부처, 총통부, 대기업 본사 등이 밀집된 대만의 정치, 경제, 문화의 중심지다. 가면 할게 많다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">관광지 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/2024-02-08.jpg" alt="일본 관광지 2" class="img-fluid">
+          <p>켄팅 국립공원 ( 중국어 :墾丁國家公園; 병음 : Kěndīng Gúojiā Gōngyuán )은 일반적으로 켄팅(중국어: 墾丁; 병음: Kěndīng)으로 알려져 있으며 , 대만 핑둥 현 의 헝춘 반도 에 위치한 국립 공원으로 헝춘 , 처청 , 만 저우 향 을 포함 합니다 . 1984 년 1월 1일에 설립되었으며,  대만 본섬에서 가장 오래되고 가장 남쪽에 있는 국립공원으로, 바시 해협을 따라 대만 섬의 가장 남쪽 지역을 포함합니다 . 행정원 내무부 에서 관리하는 이 국립공원은 열대 기후와 햇살, 아름다운 산과 해변, 매년 3월에 열리는 스프링 스크림 록 밴드 페스티벌 로 잘 알려져 있으며 ,  2016년에 584만 명의 방문객을 기록하며 오랫동안 대만에서 가장 인기 있는 관광지 중 하나였습니다. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">관광지 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/DSC_0170.webp" alt="일본 관광지 3" class="img-fluid">
+          <p>스펀 폭포는 타이완 신베이시 핑시 구에 있는 폭포이다. 타이완 철로 관리국 핑시 선 스펀 역에서 갈 수 있으며, 지룽 강 상류에 위치해 있다. 높이 약 20 미터, 너비 약 40 미터로, 타이완에서 가장 큰 폭포이다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 대만은 사계절 내내 방문할 수 있는 목적지입니다. 그러나 가장 좋은 여행 시기는 봄과 가을입니다.</li>
+        <li>언어: 중국어,대만어,하카어. 98%이상의 대만 사람들은 중국어와 대만어 또는 하카어를 모두 사용 할 줄 압니다. 아무거나 써도 괜ㅊ낳</li>
+        <li>통화: 신 대만 달러 (TWD).</li>
+        <li>교통: 버스, 지하철, 기차, 공공자전거, 나룻배 아이패스카드는 한국의 티머니와 같이 ＂전국호환＂이 가능합니다.
+버스, 지하철, 기차, 공공자전거, 나룻배 및 주차장에서 모두 사용이 가능하기
+때문에 거스름돈 받을 시간을 절약하고 할인된 가격으로 이용할 수 있습니다.</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="853" height="480" src="https://www.youtube.com/embed/0GJg9Ik_LGc" title="대만여행 체크리스트 완벽 정리✔ㅣ마이풀 - 외쿡어티비" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 대만 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
